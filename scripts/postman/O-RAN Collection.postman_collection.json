@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "d8aba7a2-7cba-4a21-a6f8-59ca308d39d1",
+		"name": "O-RAN Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get topology",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8181/rests/data/network-topology:network-topology/topology=topology-netconf/node=testtool",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8181",
+					"path": [
+						"rests",
+						"data",
+						"network-topology:network-topology",
+						"topology=topology-netconf",
+						"node=testtool"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get interfaces",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46YWRtaW4=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8181/rests/data/network-topology:network-topology/topology=topology-netconf/node=testtool/yang-ext:mount/ietf-interfaces:interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"rests",
+						"data",
+						"network-topology:network-topology",
+						"topology=topology-netconf",
+						"node=testtool",
+						"yang-ext:mount",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Feed interfaces",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic YWRtaW46YWRtaW4="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"ietf-interfaces:interfaces\": {\n    \"ietf-interfaces:interface\": [\n      {\n        \"ietf-interfaces:name\": \"NameOfInterface\",\n        \"ietf-interfaces:description\": \"Some description\",\n        \"ietf-interfaces:type\": \"ietf-interfaces:interface-type\",\n        \"ietf-interfaces:enabled\": \"true\",\n        \"ietf-interfaces:link-up-down-trap-enable\": \"enabled\",\n        \"ietf-interfaces:o-ran-interfaces:base-interface\": \"Some name\",\n        \"ietf-interfaces:o-ran-interfaces:vlan-id\": \"1\",\n        \"ietf-interfaces:o-ran-interfaces:mac-address\": \"9F:B5:fD:Fe:A0:eE\",\n        \"ietf-interfaces:o-ran-interfaces:port-reference\": {\n          \"ietf-interfaces:o-ran-interfaces:port-name\": \"0\",\n          \"ietf-interfaces:o-ran-interfaces:port-number\": \"0\"\n        },\n        \"ietf-interfaces:o-ran-interfaces:alias-macs\": [\n          \"4c:2D:Cb:Ce:bF:d2\"\n        ],\n        \"ietf-interfaces:ietf-ip:ipv4\": {\n          \"ietf-interfaces:ietf-ip:enabled\": \"true\",\n          \"ietf-interfaces:ietf-ip:forwarding\": \"false\",\n          \"ietf-interfaces:ietf-ip:mtu\": \"68\",\n          \"ietf-interfaces:ietf-ip:address\": [\n            {\n              \"ietf-interfaces:ietf-ip:ip\": \".1\",\n              \"ietf-ip:netmask\": \"210.0.0.0\"\n            }\n          ],\n          \"ietf-interfaces:ietf-ip:neighbor\": [\n            {\n              \"ietf-interfaces:ietf-ip:ip\": \"4\",\n              \"ietf-interfaces:ietf-ip:link-layer-address\": \"9D\"\n            }\n          ],\n          \"ietf-interfaces:o-ran-interfaces:diffserv-markings\": {\n            \"ietf-interfaces:o-ran-interfaces:u-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:c-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:s-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:other-marking\": \"0\",\n            \"ietf-interfaces:o-ran-interfaces:enhanced-uplane-markings\": [\n              {\n                \"ietf-interfaces:o-ran-interfaces:up-marking-name\": \"Some up-marking-name\",\n                \"ietf-interfaces:o-ran-interfaces:enhanced-marking\": \"0\"\n              }\n            ]\n          },\n          \"ietf-interfaces:o-ran-interfaces:m-plane-marking\": \"18\"\n        },\n        \"ietf-interfaces:ietf-ip:ipv6\": {\n          \"ietf-interfaces:ietf-ip:enabled\": \"true\",\n          \"ietf-interfaces:ietf-ip:forwarding\": \"false\",\n          \"ietf-interfaces:ietf-ip:mtu\": \"1280\",\n          \"ietf-interfaces:ietf-ip:address\": [\n            {\n              \"ietf-interfaces:ietf-ip:ip\": \"3\",\n              \"ietf-interfaces:ietf-ip:prefix-length\": \"0\"\n            }\n          ],\n          \"ietf-interfaces:ietf-ip:neighbor\": [\n            {\n              \"ietf-interfaces:ietf-ip:ip\": \"c\",\n              \"ietf-interfaces:ietf-ip:link-layer-address\": \"6F:dB:cE:1E:8E\"\n            }\n          ],\n          \"ietf-interfaces:ietf-ip:dup-addr-detect-transmits\": \"1\",\n          \"ietf-interfaces:ietf-ip:autoconf\": {\n            \"ietf-interfaces:ietf-ip:create-global-addresses\": \"true\",\n            \"ietf-interfaces:ietf-ip:create-temporary-addresses\": \"false\",\n            \"ietf-interfaces:ietf-ip:temporary-valid-lifetime\": \"604800\",\n            \"ietf-interfaces:ietf-ip:temporary-preferred-lifetime\": \"86400\"\n          },\n          \"ietf-interfaces:o-ran-interfaces:diffserv-markings\": {\n            \"ietf-interfaces:o-ran-interfaces:u-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:c-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:s-plane-marking\": \"46\",\n            \"ietf-interfaces:o-ran-interfaces:other-marking\": \"0\",\n            \"ietf-interfaces:o-ran-interfaces:enhanced-uplane-markings\": [\n              {\n                \"ietf-interfaces:o-ran-interfaces:up-marking-name\": \"Some up-marking-name\",\n                \"ietf-interfaces:o-ran-interfaces:enhanced-marking\": \"0\"\n              }\n            ]\n          },\n          \"ietf-interfaces:o-ran-interfaces:m-plane-marking\": \"18\"\n        },\n        \"ietf-interfaces:o-ran-interfaces:l2-mtu\": \"1500\",\n        \"ietf-interfaces:o-ran-interfaces:vlan-tagging\": \"true\",\n        \"ietf-interfaces:o-ran-interfaces:class-of-service\": {\n          \"ietf-interfaces:o-ran-interfaces:u-plane-marking\": \"7\",\n          \"ietf-interfaces:o-ran-interfaces:c-plane-marking\": \"7\",\n          \"ietf-interfaces:o-ran-interfaces:m-plane-marking\": \"2\",\n          \"ietf-interfaces:o-ran-interfaces:s-plane-marking\": \"7\",\n          \"ietf-interfaces:o-ran-interfaces:other-marking\": \"1\",\n          \"ietf-interfaces:o-ran-interfaces:enhanced-uplane-markings\": [\n            {\n              \"ietf-interfaces:o-ran-interfaces:up-marking-name\": \"Some up-marking-name\",\n              \"ietf-interfaces:o-ran-interfaces:enhanced-marking\": \"0\"\n            }\n          ]\n        }\n      }\n    ]\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8181/rests/data/network-topology:network-topology/topology=topology-netconf/node=testtool/yang-ext:mount/ietf-interfaces:interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"rests",
+						"data",
+						"network-topology:network-topology",
+						"topology=topology-netconf",
+						"node=testtool",
+						"yang-ext:mount",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete interfaces",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic YWRtaW46YWRtaW4="
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8181/rests/data/network-topology:network-topology/topology=topology-netconf/node=testtool/yang-ext:mount/ietf-interfaces:interfaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"rests",
+						"data",
+						"network-topology:network-topology",
+						"topology=topology-netconf",
+						"node=testtool",
+						"yang-ext:mount",
+						"ietf-interfaces:interfaces"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f0581a16-5717-4835-b950-28f8415dbdd6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "cfbe34e9-a714-4e4d-8c68-338c2b8f4e40",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
