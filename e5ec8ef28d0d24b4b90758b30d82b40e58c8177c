@@ -16,6 +16,91 @@
       "message": "Changes of O1 netconf support through SDNR",
       "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2ff7908_d59973e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-06T22:28:57Z",
+      "side": 1,
+      "message": "Hi Bhanu, thanks for submitting this change for review. I believe you are missing the .env file as part of this commit.",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "487876ca_e9517810",
+        "filename": "client/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-06T22:28:57Z",
+      "side": 1,
+      "message": "Can you remove the extra spaces in the file.",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e492edb9_56740abf",
+        "filename": "client/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-06T22:28:57Z",
+      "side": 1,
+      "message": "Remove space on this line.",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "867588a7_548f32dc",
+        "filename": "client/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-06T22:28:57Z",
+      "side": 1,
+      "message": "And on this line",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28bec306_b366f599",
+        "filename": "client/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-06T22:28:57Z",
+      "side": 1,
+      "message": "And finally on this one.",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
