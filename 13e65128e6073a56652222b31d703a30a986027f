@@ -16,6 +16,23 @@
       "message": "Hi Mahesh,\nI have addressed you comments. \n1. .env file already present.\n2. Modified the ReadMe file and get rid of all the spaces except one place due to formatting issue.\n\nI have submitted new patch 5,please do the review again.",
       "revId": "13e65128e6073a56652222b31d703a30a986027f",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fca38fbf_1862f1a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-07T22:31:46Z",
+      "side": 1,
+      "message": "Hi Bhanu, thanks for addressing my comments. ",
+      "revId": "13e65128e6073a56652222b31d703a30a986027f",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
