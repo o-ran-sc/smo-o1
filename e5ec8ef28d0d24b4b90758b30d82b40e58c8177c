@@ -158,6 +158,24 @@
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5181576_49d2e3b5",
+        "filename": "client/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000382
+      },
+      "writtenOn": "2021-05-14T00:30:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7aa52083_676560b0",
+      "revId": "e5ec8ef28d0d24b4b90758b30d82b40e58c8177c",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "28bec306_b366f599",
