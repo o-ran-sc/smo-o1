@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "193a97fc_e24ded05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000060
+      },
+      "writtenOn": "2021-06-18T19:02:19Z",
+      "side": 1,
+      "message": "Please add a hint in README how and where the environment vars of the docker-copmose are set.",
+      "revId": "5f90e61e014790bb1690a71daa731ed93c9e71d5",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    }
+  ]
+}
