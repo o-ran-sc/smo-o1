@@ -68,6 +68,24 @@
       "message": "Is the case that no one sees a +2? If so, I wonder why that is the case?",
       "revId": "ce6f4ef99da11085215a25a836042560ecacc067",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0fa190de_106a7216",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000124
+      },
+      "writtenOn": "2021-06-24T04:09:58Z",
+      "side": 1,
+      "message": "I think that only committers are allowed to give a +2.",
+      "parentUuid": "b16d4e91_d00e47e1",
+      "revId": "ce6f4ef99da11085215a25a836042560ecacc067",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
