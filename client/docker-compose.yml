@@ -48,6 +48,7 @@ services:
     volumes:
       - ./sdnr/certs/certs.properties:${ODL_CERT_DIR}/certs.properties
       - ./sdnr/certs/keys0.zip:${ODL_CERT_DIR}/keys0.zip
+      - ./sdnr/logo.gif:/opt/opendaylight/etc/logo.gif
     networks:
       integration:
         ipv4_address: ${IPv4_SDNC}
