@@ -6,7 +6,7 @@ Release-Notes
 =============
 
 
-This document provides the release notes for <RELEASE> of <COMPONENT>.
+This document provides the release notes for releases related to SMO O1.
 
 .. contents::
    :depth: 3
@@ -20,13 +20,13 @@ Version history
 | **Date**           | **Ver.**           | **Author**         | **Comment**        |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
-| 20XX-XX-XX         | 0.1.0              |                    | First draft        |
+| 2021-12-15         | E                  |                    | E-release          |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
-|                    | 0.1.1              |                    |                    |
+| 2021-06-15         | D                  |                    | Dawn release       |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
-|                    | 1.0                |                    |                    |
+| 2020-12-15         | C                  |                    | Cherry release     |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
 
@@ -34,31 +34,30 @@ Version history
 Summary
 -------
 
-<SUMMARIZE THE RELEASE - THE CONTENT - AND OTHER IMPORTANT HIGH LEVEL PROPERTIES>
+E-release:
 
+The E-release was targeted towards network slicing. The O1 interface did not need any updates to support the use case. Most of the support for the use case has to come in the Network Function (NF), and in the rApp that supports the use case. The only percievable change is the change in the logo to the GUI interface.
 
+The D(awn) release was targeted towards implementation of the O1 interface itself and getting an initial implementation in place.
 
 
 Release Data
 ------------
-<STATE RELEVANT RELEASE DATA/RECORDS>
-
-<EXAMPLE>:
 
 +--------------------------------------+--------------------------------------+
 | **Project**                          | E.g. project  		              |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| **Repo/commit-ID**                   | E.g. genesis/adf634a0d4.....         |
+| **Repo/commit-ID**                   | Repo: smo/o1                         |
+|                                      | Commit id:                           |
++--------------------------------------+--------------------------------------+
+| **Release designation**              |                                      |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| **Release designation**              | E.g. Arno RC2                        |
+| **Release date**                     | 2021-12-15                           |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| **Release date**                     | E.g. 2015-04-16                      |
-|                                      |                                      |
-+--------------------------------------+--------------------------------------+
-| **Purpose of the delivery**          | 	 		     	      |
+| **Purpose of the delivery**          | Support network slicing     	      |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
 
@@ -67,9 +66,6 @@ Release Data
 
 Feature Additions
 ^^^^^^^^^^^^^^^^^
-<STATE ADDED FEATURES BY REFERENCE TO JIRA>
-
-<EXAMPLE>:
 
 **JIRA BACK-LOG:**
 
@@ -95,7 +91,7 @@ Bug Corrections
 | **JIRA REFERENCE**                   | **SLOGAN**                           |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| 		                       | 				      |
+| SMO-11	                       | Change banner in O1 GUI interface    |
 |                                      | 				      |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
