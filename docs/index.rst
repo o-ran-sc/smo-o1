@@ -2,7 +2,7 @@
 .. SPDX-License-Identifier: CC-BY-4.0
 
 
-Welcome to O-RAN SC your_repo Documentation
+Welcome to O-RAN SC SMO O1 Documentation
 ===========================================
 
 .. toctree::
