@@ -1,0 +1,12 @@
+---
+distribution_type: container
+container_release_tag: 2.0.1
+container_pull_registry: nexus3.o-ran-sc.org:10004
+container_push_registry: nexus3.o-ran-sc.org:10002
+project: smo/o1
+ref: d86f5122ddd649adce49751b0212ae11f968d562
+containers:
+    - name: sdnrdb
+      version: 7.9.3
+    - name: sdnr
+      version: 2.2.3
