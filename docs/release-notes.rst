@@ -20,6 +20,9 @@ Version history
 | **Date**           | **Ver.**           | **Author**         | **Comment**        |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
+| 2022-12-15         | G                  |                    | G-release          |
+|                    |                    |                    |                    |
++--------------------+--------------------+--------------------+--------------------+
 | 2021-12-15         | E                  |                    | E-release          |
 |                    |                    |                    |                    |
 +--------------------+--------------------+--------------------+--------------------+
@@ -34,6 +37,9 @@ Version history
 Summary
 -------
 
+G-release:
+The G-release mainly targeted to update with the latest SDNR image.
+
 E-release:
 
 The E-release was targeted towards network slicing. The O1 interface did not need any updates to support the use case. Most of the support for the use case has to come in the Network Function (NF), and in the rApp that supports the use case. The only percievable change is the change in the logo to the GUI interface.
@@ -45,19 +51,19 @@ Release Data
 ------------
 
 +--------------------------------------+--------------------------------------+
-| **Project**                          | E.g. project  		              |
+| **Project**                          | SMO O1  		              |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
 | **Repo/commit-ID**                   | Repo: smo/o1                         |
 |                                      | Commit id:                           |
 +--------------------------------------+--------------------------------------+
-| **Release designation**              |                                      |
+| **Release designation**              | G-Release                            |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| **Release date**                     | 2021-12-15                           |
+| **Release date**                     | 2022-12-15                           |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
-| **Purpose of the delivery**          | Support network slicing     	      |
+| **Purpose of the delivery**          | Latest SDNR image      	      |
 |                                      |                                      |
 +--------------------------------------+--------------------------------------+
 
