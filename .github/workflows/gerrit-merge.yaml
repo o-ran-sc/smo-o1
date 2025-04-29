@@ -69,6 +69,15 @@ jobs:
       - name: Allow replication
         run: sleep 10s
 
+  call-sonartype-lifecycle:
+    name: "Sonatype Lifecycle Scan"
+    needs: notify
+    # yamllint disable-line rule:line-length
+    uses: lfit/releng-reusable-workflows/.github/workflows/reuse-sonatype-lifecycle.yaml@ac846b1cfeaf3a7cac6f28413a5206afc9951464 # v0.2.11
+    secrets:
+      NEXUS_IQ_PASSWORD: ${{ secrets.NEXUS_IQ_PASSWORD }}
+
+
   call-sonarcloud-scan:
     runs-on: ubuntu-latest
     needs: notify
