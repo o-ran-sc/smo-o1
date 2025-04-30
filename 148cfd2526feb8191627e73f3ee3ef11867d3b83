@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "148cfd2526feb8191627e73f3ee3ef11867d3b83",
       "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0847c751_a8529390",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000060
+      },
+      "writtenOn": "2025-04-30T08:33:50Z",
+      "side": 1,
+      "message": "@Sehsu - just tell me, if you like me to merge this change.",
+      "revId": "148cfd2526feb8191627e73f3ee3ef11867d3b83",
+      "serverId": "84e4e190-e623-4c37-9eda-58b1937c1b53"
     }
   ]
 }
