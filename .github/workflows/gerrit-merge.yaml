@@ -102,7 +102,7 @@ jobs:
 
   report-status:
     if: ${{ always() }}
-    needs: [notify, call-sonarcloud-scan]
+    needs: [notify, call-sonartype-lifecycle, call-sonarcloud-scan]
     runs-on: ubuntu-latest
     steps:
       - name: Get workflow conclusion
